@@ -12,5 +12,5 @@ max_iter: 10000000
 momentum: 0.9
 weight_decay: 0.0002
 snapshot: 40000
-snapshot_prefix: "/media/data/abhinav/ann_project_data/ImageNet_trained_models_resized/googlenet_imagenet"
+snapshot_prefix: "/media/data/abhinav/ann_project_data/ImageNet_trained_edge_models_resized/googlenet_edge_imagenet"
 solver_mode: GPU

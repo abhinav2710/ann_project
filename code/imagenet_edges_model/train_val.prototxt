@@ -13,7 +13,7 @@ layer {
     #mean_value: 104
     #mean_value: 117
     #mean_value: 123
-    mean_file: "/media/data/abhinav/ann_project_data/imagenet_resized_mean.binaryproto"
+    mean_file: "/media/data/abhinav/ann_project_data/imagenet_edge_resized_mean.binaryproto"
   }
   data_param {
     source: "/media/data/abhinav/ann_project_data/ilsvrc12_train_edge_resized_lmdb"
@@ -32,7 +32,7 @@ layer {
   transform_param {
     mirror: false
     crop_size: 224
-    mean_file: "/media/data/abhinav/ann_project_data/imagenet_resized_mean.binaryproto"
+    mean_file: "/media/data/abhinav/ann_project_data/imagenet_edge_resized_mean.binaryproto"
     #mean_value: 104
     #mean_value: 117
     #mean_value: 123
