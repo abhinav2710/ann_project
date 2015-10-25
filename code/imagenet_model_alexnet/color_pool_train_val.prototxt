@@ -48,7 +48,6 @@ layer {
     stride: 1
   }
 }
-
 layer {
   name: "conv1"
   type: "Convolution"
@@ -385,6 +384,19 @@ layer {
   top: "accuracy"
   include {
     phase: TEST
+  }
+}
+layer {
+  name: "accuracy/top5"
+  type: "Accuracy"
+  bottom: "fc8"
+  bottom: "label"
+  top: "accuracy/top5"
+  include {
+    phase: TEST
+  }
+  accuracy_param {
+    top_k:5
   }
 }
 layer {
